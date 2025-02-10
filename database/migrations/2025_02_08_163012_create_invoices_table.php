@@ -13,13 +13,14 @@ return new class extends Migration
     {
         Schema::create('invoices', function (Blueprint $table) {
             $table->id();
-            $table->string('client_name');  // Client Name
-            $table->string('invoice_number')->unique(); // Unique Invoice Number
-            $table->decimal('amount', 10, 2); // Invoice Amount
-            $table->date('due_date'); // Payment Due Date
-            $table->enum('status', ['unpaid', 'paid', 'overdue'])->default('unpaid'); // Status
+            $table->string('client_name');
+            $table->string('invoice_number')->unique();
+            $table->decimal('amount', 10, 2);
+            $table->date('due_date');
+            $table->enum('status', ['Unpaid', 'Paid'])->default('Unpaid'); // Status
             $table->timestamps();
         });
+        
     }
     
 

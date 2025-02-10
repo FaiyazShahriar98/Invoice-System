@@ -1,0 +1,151 @@
+/* ========== GLOBAL STYLES ========== */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* ========== TABLE STYLING ========== */
+/* Table Header Background */
+thead th {
+    background-color: #f3f3f3; /* Light grey background */
+    color: #000; /* Black text */
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Table Header Sorting Column */
+thead th a {
+    color: #000; /* Default text color */
+    text-decoration: none; /* Remove underline */
+    padding: 8px;
+    display: inline-block;
+}
+
+/* When a column is actively sorted */
+thead th a:hover,
+thead th a:focus {
+    color: white; /* Change color to white when hovered */
+    background-color: #007bff; /* Keep a blue shade for sorting */
+    padding: 8px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Active sorted column */
+thead th a.active {
+    color: white;
+    background-color: #007bff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1; /* Light grey on hover */
+}
+
+
+/* ========== BUTTON STYLES ========== */
+.btn-primary,
+.btn-warning,
+.btn-danger,
+.btn-secondary {
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn-warning:hover {
+    background-color: #d39e00;
+    transform: scale(1.05);
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+.btn-secondary:hover {
+    background-color: #6c757d;
+    transform: scale(1.05);
+}
+
+/* ========== FILTER & SORTING UI ========== */
+.sort-icon {
+    display: inline-block;
+    margin-left: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.sort-asc {
+    transform: rotate(0deg);
+}
+
+.sort-desc {
+    transform: rotate(180deg);
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+    background: #5d98d3;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #17a2b8;
+}
+
+/* ========== STATUS LABELS ========== */
+.status-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status-paid {
+    background: #28a745;
+    color: white;
+}
+
+.status-unpaid {
+    background: #dc3545;
+    color: white;
+}
+
+/* ========== FORM FIELDS & FILTERS ========== */
+input, select {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    transition: all 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
