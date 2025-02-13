@@ -5,10 +5,15 @@
 /public/storage
 /storage/*.key
 /storage/pail
+/storage/logs/*
+/storage/framework/*
+/storage/oauth-private.key
+/storage/oauth-public.key
 /vendor
 .env
 .env.backup
 .env.production
+/.env.example
 .phpactor.json
 .phpunit.result.cache
 Homestead.json
@@ -21,3 +26,4 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+/bootstrap/cache/*
