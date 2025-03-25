@@ -6,6 +6,14 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
+Installation:
+Clone Repo:
+git clone
+Install Dependencies:
+npm install
+Run Locally:
+php artisan serve
+
 
 ## About Laravel
 
@@ -48,6 +56,7 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 - **[Active Logic](https://activelogic.com)**
 - **[byte5](https://byte5.de)**
 - **[OP.GG](https://op.gg)**
+
 
 ## Contributing
 
